@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glory Kampezeni | African Musicology Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Script for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<!-- Font Awesome Script for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Raleway', sans-serif; }
+    h1, h2, h3 { font-family: 'Oswald', sans-serif; }
+    .divider {
+      display: flex; align-items: center; text-align: center; margin: 2rem 0;
+    }
+    .divider::before, .divider::after {
+      content: ''; flex: 1; border-bottom: 2px dashed #78350f; /* amber-900 */
+    }
+    .divider:not(:empty)::before { margin-right: .75em; }
+    .divider:not(:empty)::after { margin-left: .75em; }
+    html { scroll-behavior: smooth; } /* Smooth scrolling */
+  </style>
+</head>
+<body class="bg-amber-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full z-50 bg-emerald-900 text-white shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-xl font-bold text-amber-400">Glory Kampezeni</h1>
+      <ul class="hidden md:flex space-x-8 font-semibold">
+        <li><a href="#about" class="hover:text-amber-400 transition">About</a></li>
+        <li><a href="#journey" class="hover:text-amber-400 transition">Journey</a></li>
+        <li><a href="#performances" class="hover:text-amber-400 transition">Performances</a></li>
+        <li><a href="#contact" class="hover:text-amber-400 transition">Contact</a></li>
+      </ul>
+      <!-- Mobile menu button -->
+      <button id="menu-btn" class="md:hidden text-amber-400 focus:outline-none">
+        ☰
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-emerald-800 px-6 py-4 space-y-3">
+      <a href="#about" class="block hover:text-amber-300">About</a>
+      <a href="#journey" class="block hover:text-amber-300">Journey</a>
+      <a href="#performances" class="block hover:text-amber-300">Performances</a>
+      <a href="#contact" class="block hover:text-amber-300">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen flex flex-col justify-center items-center text-white text-center bg-cover bg-center" 
+    style="background-image: url('perfomance.jpg');">
+    <!-- Gradient + overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-emerald-900/80 via-black/70 to-amber-800/80"></div>
+    <div class="relative z-10 mt-16">
+      <h1 class="text-5xl md:text-6xl font-bold drop-shadow-lg">Glory Kampezeni</h1>
+      <p class="mt-4 text-xl md:text-2xl">Fourth-Year African Musicology Student</p>
+      <p class="mt-2 text-lg italic">Malawi University of Science and Technology</p>
+      <a href="#about" class="mt-6 inline-block px-6 py-3 bg-amber-500 text-black font-semibold rounded-full shadow-lg hover:bg-amber-600 transition">
+        Explore My Portfolio
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <!-- About Section -->
+<!-- About Section -->
+<section id="about" class="max-w-6xl mx-auto py-20 px-6">
+  <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 text-center mb-12">About Me</h2>
+  
+  <div class="md:flex items-start gap-12">
+
+    <!-- Profile Image -->
+    <div class="md:w-1/3 flex justify-center md:justify-start">
+      <img src="glory.jpg" alt="Glory Kampezeni" class="w-64 h-64 md:w-72 md:h-72 rounded-xl shadow-2xl border-4 border-amber-400 object-cover transform transition duration-500 hover:scale-105">
+    </div>
+
+    <!-- About Text -->
+    <div class="md:w-2/3">
+      <p class="text-lg md:text-xl leading-relaxed text-gray-800">
+        I am <span class="font-semibold text-amber-500">Glory Kampezeni</span>, a fourth-year student of 
+        <span class="text-emerald-900 font-semibold">African Musicology</span> at 
+        <span class="font-semibold text-amber-500">Malawi University of Science and Technology (MUST)</span>. 
+        My work explores the fusion of traditional Malawian music and modern technology. 
+        Through drumming, dance, and multimedia production, I aim to preserve our cultural identity 
+        while innovating for sustainable development.
+      </p>
+
+      <!-- Social Media Icons -->
+      <div class="mt-6 flex gap-4">
+        <a href="https://www.facebook.com" target="_blank" class="text-gray-800 text-2xl hover:text-amber-500 transition"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank" class="text-gray-800 text-2xl hover:text-amber-500 transition"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com" target="_blank" class="text-gray-800 text-2xl hover:text-amber-500 transition"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="text-gray-800 text-2xl hover:text-amber-500 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <!-- Resume Download Button -->
+      <div class="mt-6">
+        <a href="Glory_Kampezeni_Resume.pdf" download class="inline-block px-6 py-3 bg-amber-500 text-black font-semibold rounded-full shadow-lg hover:bg-amber-600 hover:scale-105 transition transform duration-300">
+          Download Resume
+        </a>
+      </div>
+
+      <!-- Skills Bars -->
+      <div class="mt-8 space-y-4">
+        <div>
+          <p class="text-gray-800 font-semibold mb-1">African Musicology <span class="float-right">90%</span></p>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div class="bg-amber-500 h-4 rounded-full" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-gray-800 font-semibold mb-1">Dance & Performance <span class="float-right">85%</span></p>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div class="bg-amber-500 h-4 rounded-full" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-gray-800 font-semibold mb-1">Sound Engineering <span class="float-right">75%</span></p>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div class="bg-amber-500 h-4 rounded-full" style="width: 75%;"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-gray-800 font-semibold mb-1">Multimedia Production <span class="float-right">80%</span></p>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div class="bg-amber-500 h-4 rounded-full" style="width: 80%;"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <div class="divider">◉</div>
+
+ 
+<!-- Academic Journey -->
+<section id="journey" class="relative bg-gradient-to-br from-amber-50 via-white to-emerald-50 py-20 px-6">
+  <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 text-center mb-12">My Academic Journey</h2>
+  
+  <div class="max-w-4xl mx-auto relative">
+    <!-- Timeline line -->
+    <div class="absolute left-4 top-0 h-full w-1 bg-gradient-to-b from-amber-400 to-emerald-600 rounded-full"></div>
+
+    <!-- ================= Year 1 ================= -->
+    <div class="relative pl-12 mb-14">
+      <h3 class="text-2xl font-bold text-amber-700 mb-6">Year 1</h3>
+
+      <!-- Semester 1 -->
+      <div class="mb-8">
+        <div class="absolute left-0 top-1 w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold shadow-md">1</div>
+        <div class="bg-white border border-amber-200 rounded-xl shadow-md hover:shadow-lg transition p-6 ml-12">
+          <button onclick="toggleSemester(1)" class="w-full text-left font-semibold text-emerald-900 flex justify-between items-center">
+            <span>Semester 1</span>
+            <span id="icon-1" class="transition-transform">+</span>
+          </button>
+          <div id="sem-1" class="hidden mt-4 text-gray-700">
+            <ul class="list-disc list-inside space-y-1">
+              <li>Ethics & Morality</li>
+              <li>Language & Communication</li>
+              <li>Fundamentals of Music</li>
+              <li>Choirology</li>
+              <li>Essentials of Musical Sound & Electronics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Semester 2 -->
+      <div class="mb-8">
+        <div class="absolute left-0 top-1 w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold shadow-md">2</div>
+        <div class="bg-white border border-amber-200 rounded-xl shadow-md hover:shadow-lg transition p-6 ml-12">
+          <button onclick="toggleSemester(2)" class="w-full text-left font-semibold text-emerald-900 flex justify-between items-center">
+            <span>Semester 2</span>
+            <span id="icon-2" class="transition-transform">+</span>
+          </button>
+          <div id="sem-2" class="hidden mt-4 text-gray-700">
+            <ul class="list-disc list-inside space-y-1">
+              <li>Introduction to African Music</li>
+              <li>Applied Rhythm Studies</li>
+              <li>Computer Applications in Music</li>
+              <li>History of Malawian Arts</li>
+              <li>Performance Practicum I</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Year 2 ================= -->
+    <div class="relative pl-12 mb-14">
+      <h3 class="text-2xl font-bold text-amber-700 mb-6">Year 2</h3>
+
+      <!-- Semester 3 -->
+      <div class="mb-8">
+        <div class="absolute left-0 top-1 w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold shadow-md">3</div>
+        <div class="bg-white border border-amber-200 rounded-xl shadow-md hover:shadow-lg transition p-6 ml-12">
+          <button onclick="toggleSemester(3)" class="w-full text-left font-semibold text-emerald-900 flex justify-between items-center">
+            <span>Semester 3</span>
+            <span id="icon-3" class="transition-transform">+</span>
+          </button>
+          <div id="sem-3" class="hidden mt-4 text-gray-700">
+            <ul class="list-disc list-inside space-y-1">
+              <li>Ethnomusicology Foundations</li>
+              <li>Malawian Traditional Dance Studies</li>
+              <li>Musical Instrument Crafting & Maintenance</li>
+              <li>Philosophy of African Music</li>
+              <li>Performance Practicum II</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Semester 4 -->
+      <div class="mb-8">
+        <div class="absolute left-0 top-1 w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold shadow-md">4</div>
+        <div class="bg-white border border-amber-200 rounded-xl shadow-md hover:shadow-lg transition p-6 ml-12">
+          <button onclick="toggleSemester(4)" class="w-full text-left font-semibold text-emerald-900 flex justify-between items-center">
+            <span>Semester 4</span>
+            <span id="icon-4" class="transition-transform">+</span>
+          </button>
+          <div id="sem-4" class="hidden mt-4 text-gray-700">
+            <ul class="list-disc list-inside space-y-1">
+              <li>Research Methods in Musicology</li>
+              <li>World Music Traditions</li>
+              <li>Music Composition & Arrangement</li>
+              <li>Sound Engineering Basics</li>
+              <li>Performance Practicum III</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Year 3 ================= -->
+    <div class="relative pl-12 mb-14">
+      <h3 class="text-2xl font-bold text-amber-700 mb-6">Year 3</h3>
+
+      <!-- Semester 5 -->
+      <div class="mb-8">
+        <div class="absolute left-0 top-1 w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold shadow-md">5</div>
+        <div class="bg-white border border-amber-200 rounded-xl shadow-md hover:shadow-lg transition p-6 ml-12">
+          <button onclick="toggleSemester(5)" class="w-full text-left font-semibold text-emerald-900 flex justify-between items-center">
+            <span>Semester 5</span>
+            <span id="icon-5" class="transition-transform">+</span>
+          </button>
+          <div id="sem-5" class="hidden mt-4 text-gray-700">
+            <ul class="list-disc list-inside space-y-1">
+              <li>Advanced African Drumming</li>
+              <li>Contemporary African Music Analysis</li>
+              <li>Community Music & Development</li>
+              <li>Music & Technology Integration</li>
+              <li>Performance Practicum IV</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Semester 6 -->
+      <div class="mb-8">
+        <div class="absolute left-0 top-1 w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold shadow-md">6</div>
+        <div class="bg-white border border-amber-200 rounded-xl shadow-md hover:shadow-lg transition p-6 ml-12">
+          <button onclick="toggleSemester(6)" class="w-full text-left font-semibold text-emerald-900 flex justify-between items-center">
+            <span>Semester 6</span>
+            <span id="icon-6" class="transition-transform">+</span>
+          </button>
+          <div id="sem-6" class="hidden mt-4 text-gray-700">
+            <ul class="list-disc list-inside space-y-1">
+              <li>African Music & Globalization</li>
+              <li>Music Entrepreneurship</li>
+              <li>Stage Production & Management</li>
+              <li>Music Therapy Basics</li>
+              <li>Performance Practicum V</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Year 4 ================= -->
+    <div class="relative pl-12 mb-14">
+      <h3 class="text-2xl font-bold text-amber-700 mb-6">Year 4</h3>
+
+      <!-- Semester 7 -->
+      <div class="mb-8">
+        <div class="absolute left-0 top-1 w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold shadow-md">7</div>
+        <div class="bg-white border border-amber-200 rounded-xl shadow-md hover:shadow-lg transition p-6 ml-12">
+          <button onclick="toggleSemester(7)" class="w-full text-left font-semibold text-emerald-900 flex justify-between items-center">
+            <span>Semester 7</span>
+            <span id="icon-7" class="transition-transform">+</span>
+          </button>
+          <div id="sem-7" class="hidden mt-4 text-gray-700">
+            <ul class="list-disc list-inside space-y-1">
+              <li>Advanced Ethnomusicology Research</li>
+              <li>Policy & Cultural Heritage Management</li>
+              <li>Multimedia & African Music</li>
+              <li>Jazz & African Fusion Studies</li>
+              <li>Performance Practicum VI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Semester 8 -->
+      <div class="mb-8">
+        <div class="absolute left-0 top-1 w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold shadow-md">8</div>
+        <div class="bg-white border border-amber-200 rounded-xl shadow-md hover:shadow-lg transition p-6 ml-12">
+          <button onclick="toggleSemester(8)" class="w-full text-left font-semibold text-emerald-900 flex justify-between items-center">
+            <span>Semester 8</span>
+            <span id="icon-8" class="transition-transform">+</span>
+          </button>
+          <div id="sem-8" class="hidden mt-4 text-gray-700">
+            <ul class="list-disc list-inside space-y-1">
+              <li>Capstone Project in African Musicology</li>
+              <li>Music, Identity & Society</li>
+              <li>Internship / Community Engagement</li>
+              <li>Final Performance Recital</li>
+              <li>Research Dissertation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function toggleSemester(num) {
+    const section = document.getElementById(`sem-${num}`);
+    const icon = document.getElementById(`icon-${num}`);
+    section.classList.toggle("hidden");
+    icon.textContent = section.classList.contains("hidden") ? "+" : "−";
+  }
+</script>
+
+
+
+  <div class="divider">✦</div>
+
+ <!-- Performances -->
+<section id="performances" class="py-16 px-6 bg-amber-50">
+  <h2 class="text-3xl font-bold text-emerald-900 text-center mb-12">Performances</h2>
+  <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+
+    <!-- Card Template -->
+    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
+      <div class="overflow-hidden">
+        <img src="glory1.jpg" alt="African Drumming" class="w-full h-72 object-cover transform transition-transform duration-500 hover:scale-110">
+      </div>
+      <div class="p-6 flex-1 flex flex-col">
+        <h3 class="font-semibold text-xl">African Drumming</h3>
+        <p class="text-gray-600 mt-2 flex-1">Traditional Malawian rhythms live performance.</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
+      <div class="overflow-hidden">
+        <img src="perfomance.jpg" alt="African Dance" class="w-full h-72 object-cover transform transition-transform duration-500 hover:scale-110">
+      </div>
+      <div class="p-6 flex-1 flex flex-col">
+        <h3 class="font-semibold text-xl">Dance: The African Experience</h3>
+        <p class="text-gray-600 mt-2 flex-1">Blending traditional and modern African movement.</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
+      <div class="overflow-hidden">
+        <img src="t.jpg" alt="Jazz Drum" class="w-full h-72 object-cover transform transition-transform duration-500 hover:scale-110">
+      </div>
+      <div class="p-6 flex-1 flex flex-col">
+        <h3 class="font-semibold text-xl">Jazz Drum Fundamentals</h3>
+        <p class="text-gray-600 mt-2 flex-1">Fusion of African rhythms and jazz techniques.</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
+      <div class="overflow-hidden">
+        <img src="choir.jpg" alt="Choral Performance" class="w-full h-72 object-cover transform transition-transform duration-500 hover:scale-110">
+      </div>
+      <div class="p-6 flex-1 flex flex-col">
+        <h3 class="font-semibold text-xl">Choral Harmony</h3>
+        <p class="text-gray-600 mt-2 flex-1">African choral traditions blending voices and harmony.</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
+      <div class="overflow-hidden">
+        <img src="glory.jpg" alt="Instrumental Ensemble" class="w-full h-72 object-cover transform transition-transform duration-500 hover:scale-110">
+      </div>
+      <div class="p-6 flex-1 flex flex-col">
+        <h3 class="font-semibold text-xl">Instrumental Ensemble</h3>
+        <p class="text-gray-600 mt-2 flex-1">Showcasing African instruments in a modern context.</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
+      <div class="overflow-hidden">
+        <img src="engineering.jpg" alt="Fusion Showcase" class="w-full h-72 object-cover transform transition-transform duration-500 hover:scale-110">
+      </div>
+      <div class="p-6 flex-1 flex flex-col">
+        <h3 class="font-semibold text-xl">Fusion Showcase</h3>
+        <p class="text-gray-600 mt-2 flex-1">Mix of African rhythms with global contemporary music.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <div class="divider">✧</div>
+
+  <!-- Contact Section -->
+   <!-- Contact Section -->
+<section id="contact" class="relative py-16 px-6 text-white bg-cover bg-center"
+    style="background-image: url('engineering.jpg');">
+  <div class="absolute inset-0 bg-gradient-to-r from-emerald-900/80 via-black/70 to-amber-800/80"></div>
+  <div class="relative z-10 max-w-2xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+
+    <!-- Glassmorphic Contact Form with Netlify + JS notification + shimmer fade -->
+    <form 
+      name="contact" 
+      method="POST" 
+      data-netlify="true" 
+      id="contact-form"
+      class="relative bg-white/30 backdrop-blur-lg border border-white/30 p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-500 text-gray-800 overflow-hidden"
+    >
+      <!-- Hidden input for Netlify -->
+      <input type="hidden" name="form-name" value="contact">
+
+      <!-- Shimmer overlay -->
+      <div class="absolute inset-0 rounded-xl pointer-events-none shimmer" id="shimmer-overlay"></div>
+
+      <div class="mb-4">
+        <label class="block font-semibold mb-2">Name</label>
+        <input 
+          type="text" 
+          name="name"
+          class="w-full border border-white/50 p-2 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 bg-white/50 placeholder-white/70 text-gray-900 transition" 
+          placeholder="Your Name" 
+          required
+        >
+      </div>
+
+      <div class="mb-4">
+        <label class="block font-semibold mb-2">Email</label>
+        <input 
+          type="email" 
+          name="email"
+          class="w-full border border-white/50 p-2 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 bg-white/50 placeholder-white/70 text-gray-900 transition" 
+          placeholder="Your Email" 
+          required
+        >
+      </div>
+
+      <div class="mb-4">
+        <label class="block font-semibold mb-2">Message</label>
+        <textarea 
+          name="message"
+          class="w-full border border-white/50 p-2 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 bg-white/50 placeholder-white/70 text-gray-900 transition" 
+          rows="4" 
+          placeholder="Your Message" 
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 hover:shadow-lg transition duration-300">
+        Send Message
+      </button>
+
+      <!-- Success & Error Messages -->
+      <p id="success-msg" class="hidden mt-4 text-green-600 font-semibold">Thank you! Your message has been sent.</p>
+      <p id="error-msg" class="hidden mt-4 text-red-600 font-semibold">Oops! Something went wrong. Please try again.</p>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const successMsg = document.getElementById('success-msg');
+    const errorMsg = document.getElementById('error-msg');
+    const shimmer = document.getElementById('shimmer-overlay');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      // Fade out shimmer immediately
+      shimmer.style.transition = "opacity 0.8s ease";
+      shimmer.style.opacity = "0";
+
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(() => {
+        successMsg.classList.remove('hidden');
+        errorMsg.classList.add('hidden');
+        form.reset();
+
+        // Restore shimmer after short delay
+        setTimeout(() => {
+          shimmer.style.opacity = "1";
+        }, 2000);
+      })
+      .catch(() => {
+        errorMsg.classList.remove('hidden');
+        successMsg.classList.add('hidden');
+
+        // Restore shimmer after short delay
+        setTimeout(() => {
+          shimmer.style.opacity = "1";
+        }, 2000);
+      });
+    });
+  </script>
+</section>
+
+
+<!-- Shimmer Effect Styles -->
+<style>
+  .shimmer {
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    animation: shimmer-move 3s infinite linear;
+    background-size: 200% 100%;
+  }
+
+  @keyframes shimmer-move {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+</style>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-6">
+    <p>&copy; 2025 Glory Kampezeni | African Musicology Portfolio</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Navbar Mobile Toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+
+    // Academic Journey Toggle
+    function toggleSemester(num) {
+      const section = document.getElementById(`sem-${num}`);
+      section.classList.toggle("hidden");
+    }
+
+    // Modal Controls
+    function openModal(id) { document.getElementById(id).classList.remove("hidden"); }
+    function closeModal(id) { document.getElementById(id).classList.add("hidden"); }
+  </script>
+
+</body>
+</html>
