@@ -426,19 +426,15 @@
   <div class="relative z-10 max-w-2xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
 
-    <!-- Glassmorphic Contact Form with Netlify + JS notification + shimmer fade -->
+    <!-- Glassmorphic Contact Form with Netlify -->
     <form 
       name="contact" 
       method="POST" 
-      data-netlify="true" 
-      id="contact-form"
+      data-netlify="true"
       class="relative bg-white/30 backdrop-blur-lg border border-white/30 p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-500 text-gray-800 overflow-hidden"
     >
       <!-- Hidden input for Netlify -->
       <input type="hidden" name="form-name" value="contact">
-
-      <!-- Shimmer overlay -->
-      <div class="absolute inset-0 rounded-xl pointer-events-none shimmer" id="shimmer-overlay"></div>
 
       <div class="mb-4">
         <label class="block font-semibold mb-2">Name</label>
@@ -476,55 +472,10 @@
       <button type="submit" class="bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 hover:shadow-lg transition duration-300">
         Send Message
       </button>
-
-      <!-- Success & Error Messages -->
-      <p id="success-msg" class="hidden mt-4 text-green-600 font-semibold">Thank you! Your message has been sent.</p>
-      <p id="error-msg" class="hidden mt-4 text-red-600 font-semibold">Oops! Something went wrong. Please try again.</p>
     </form>
   </div>
-
-  <script>
-    const form = document.getElementById('contact-form');
-    const successMsg = document.getElementById('success-msg');
-    const errorMsg = document.getElementById('error-msg');
-    const shimmer = document.getElementById('shimmer-overlay');
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const formData = new FormData(form);
-
-      // Fade out shimmer immediately
-      shimmer.style.transition = "opacity 0.8s ease";
-      shimmer.style.opacity = "0";
-
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString()
-      })
-      .then(() => {
-        successMsg.classList.remove('hidden');
-        errorMsg.classList.add('hidden');
-        form.reset();
-
-        // Restore shimmer after short delay
-        setTimeout(() => {
-          shimmer.style.opacity = "1";
-        }, 2000);
-      })
-      .catch(() => {
-        errorMsg.classList.remove('hidden');
-        successMsg.classList.add('hidden');
-
-        // Restore shimmer after short delay
-        setTimeout(() => {
-          shimmer.style.opacity = "1";
-        }, 2000);
-      });
-    });
-  </script>
 </section>
+
 
 
 <!-- Shimmer Effect Styles -->
